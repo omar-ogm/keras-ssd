@@ -151,7 +151,7 @@ class Generator(object):
                 y = self.gt[key].copy()
                 if train and self.do_crop:
                     img, y = self.random_sized_crop(img, y)
-                img = imresize(img, self.image_size).astype('float32')
+                img = resize(img, self.image_size).astype('float32')
                 if train:
                     shuffle(self.color_jitter)
                     for jitter in self.color_jitter:
