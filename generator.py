@@ -1,7 +1,7 @@
 import numpy as np
 from random import shuffle
-from scipy.misc import imread
-from scipy.misc import imresize
+from cv2 import imread
+from cv2 import resize
 from keras.applications.imagenet_utils import preprocess_input
 
 class Generator(object):
